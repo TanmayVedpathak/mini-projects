@@ -1,0 +1,64 @@
+[
+    {
+      "id": 1,
+      "title": "General Knowledge",
+      "questions": [
+        {
+          "id": 101,
+          "questionText": "What is the capital of Australia?",
+          "options": [
+            { "id": "a", "text": "Sydney" },
+            { "id": "b", "text": "Canberra" },
+            { "id": "c", "text": "Melbourne" },
+            { "id": "d", "text": "Perth" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "id": 102,
+          "questionText": "Which continent is the Sahara Desert located on?",
+          "options": [
+            { "id": "a", "text": "Asia" },
+            { "id": "b", "text": "Australia" },
+            { "id": "c", "text": "Africa" },
+            { "id": "d", "text": "South America" }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "id": 103,
+          "questionText": "What is the tallest mountain in the world?",
+          "options": [
+            { "id": "a", "text": "K2" },
+            { "id": "b", "text": "Mount Everest" },
+            { "id": "c", "text": "Kangchenjunga" },
+            { "id": "d", "text": "Lhotse" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "id": 104,
+          "questionText": "Which country has the largest population?",
+          "options": [
+            { "id": "a", "text": "India" },
+            { "id": "b", "text": "USA" },
+            { "id": "c", "text": "China" },
+            { "id": "d", "text": "Russia" }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "id": 105,
+          "questionText": "What is the smallest planet in our solar system?",
+          "options": [
+            { "id": "a", "text": "Mars" },
+            { "id": "b", "text": "Venus" },
+            { "id": "c", "text": "Mercury" },
+            { "id": "d", "text": "Earth" }
+          ],
+          "correctAnswer": "c"
+        }
+      ]
+    }
+]
+  

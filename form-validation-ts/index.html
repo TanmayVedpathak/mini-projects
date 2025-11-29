@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form-validation-ts</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Get <span class="highlight">Rs. 1 Cr. Life Cover</span> at just <span class="price">Rs.19/day***</span></h2>
+      <div class="subheader">
+        <span>17% Online Discount**</span>
+        <span>Save tax up to Rs.54,600~</span>
+      </div>
+    </div>
+
+    <div class="form-content">
+      <div class="-text">All fields are mandatory</div>
+
+      <form id="insuranceForm">
+        <div class="form-group">
+          <label for="full-name" class="form-label">Full Name</label>
+          <input id="full-name" type="text" name="full-name" placeholder="First Name followed by Last Name"
+            data-key="full-name" data-valided="fullName" />
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Are you an NRI?</p>
+          <div class="button-group">
+            <input id="nri-yes" type="radio" name="nri" value="Y" data-key="is_nri" data-valided="radio" />
+            <label for="nri-yes" class="btn-option">
+              🌍 Yes
+            </label>
+            <input id="nri-no" type="radio" name="nri" value="N" data-key="is_nri" data-valided="radio" checked />
+            <label for="nri-no" class="btn-option ">
+              🏠 No
+            </label>
+          </div>
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Gender</p>
+          <div class="button-group">
+            <input id="gender-male" type="radio" name="gender" value="GEN_M" data-key="gender" data-valided="radio" />
+            <label for="gender-male" class="btn-option">
+              👨 Male
+            </label>
+            <input id="gender-female" type="radio" name="gender" value="GEN_F" data-key="gender" data-valided="radio"
+              checked />
+            <label for="gender-female" class="btn-option">
+              👩 Female
+            </label>
+          </div>
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">
+            Tobacco?
+            <span class="info-icon">i</span>
+          </p>
+          <div class="button-group">
+            <input id="tobacco-yes" type="radio" name="tobacco" value="Y" data-key="is_smoker" data-valided="radio" />
+            <label for="tobacco-yes" class="btn-option">
+              Yes
+            </label>
+            <input id="tobacco-no" type="radio" name="tobacco" value="N" data-key="is_smoker" data-valided="radio"
+              checked />
+            <label for="tobacco-no" class="btn-option ">
+              No
+            </label>
+          </div>
+
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="dob" class="form-label">Date of Birth (DOB)</label>
+          <input id="dob" type="date" name="dob" data-key="full-name" data-valided="dob" />
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="income" class="form-label">Annual Income</label>
+          <select id="income" name="income" data-key="annual_income" data-valided="dropDown">
+            <option value="" selected disabled>Select Income</option>
+            <option value="0-3">Up to Rs. 3 Lakhs</option>
+            <option value="3-5">Rs. 3-5 Lakhs</option>
+            <option value="5-10">Rs. 5-10 Lakhs</option>
+            <option value="10-25">Rs. 10-25 Lakhs</option>
+            <option value="25+">Above Rs. 25 Lakhs</option>
+          </select>
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Mobile Number</p>
+          <div class="phone-input">
+            <input type="text" name="country-code" class="country-code" value="91" readonly="readonly"
+              data-key="country_phone_code" data-valided="indiaCode" />
+            <input type="text" name="phone-number" class="phone-number" placeholder="Enter Mobile" data-key="phone"
+              data-valided="indianPhone" />
+          </div>
+          <div class="spam-notice">✓ we don't spam</div>
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Enter Email</label>
+          <input id="email" name="email" type="email" placeholder="Email Id" data-key="email" data-valided="email" />
+          <span class="error-text dsp-n"></span>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="authorize">
+          <label for="authorize">
+            I authorize HDFC Life and its representatives to contact me through Call, Email, SMS or WhatsApp...
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Get Free Quote</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
