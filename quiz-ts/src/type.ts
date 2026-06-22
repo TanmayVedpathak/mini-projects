@@ -1,19 +1,19 @@
 type OptionsObj = {
-    id: number;
-    text: string;
+  id: number;
+  text: string;
 };
 
 type SingleQuestion = {
-    id: number;
-    questionText: string;
-    options: OptionsObj[];
-    correctAnswer: string;
+  id: number;
+  questionText: string;
+  options: OptionsObj[];
+  correctAnswer: string;
 };
 
 type QuestionGroup = {
-    id: number;
-    title: string;
-    questions: SingleQuestion[];
+  id: number;
+  title: string;
+  questions: SingleQuestion[];
 };
 
 export type { QuestionGroup };
